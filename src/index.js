@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CatList from './Catlist';
 import reportWebVitals from './reportWebVitals';
+import { catnames } from './catnames';
+import 'tachyons';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    (<CatList catnames={catnames}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
